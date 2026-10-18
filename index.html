@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FF JOHN - Free Fire Tournament App">
+<title>FF JOHN — Free Fire Tournaments</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#fff}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px 6%;background:rgba(5,5,5,.82);backdrop-filter:blur(12px);border-bottom:1px solid #222}
+.logo{font-size:25px;font-weight:900;letter-spacing:1px}
+.logo span{color:#ff4b00}
+.navlinks{display:flex;gap:28px;color:#bbb;font-weight:700;font-size:14px}
+.navlinks a:hover{color:#ff4b00}
+.navbtn{background:#ff4b00;padding:12px 18px;border-radius:10px;font-weight:900}
+.hero{min-height:760px;padding:150px 7% 90px;display:flex;align-items:center;justify-content:space-between;gap:50px;background:radial-gradient(circle at 75% 45%,#3b1508 0,#130803 25%,#050505 55%)}
+.hero-left{max-width:700px}
+.kicker{color:#ff5a00;font-weight:900;letter-spacing:3px;margin-bottom:18px}
+h1{font-size:clamp(48px,7vw,92px);line-height:.94;font-weight:1000;text-transform:uppercase}
+h1 span{color:#ff4b00}
+.hero p{margin:28px 0;color:#aaa;font-size:19px;line-height:1.6;max-width:650px}
+.buttons{display:flex;gap:18px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:18px 30px;border-radius:14px;font-weight:900;font-size:17px;transition:.2s}
+.btn-main{background:#ff4b00;box-shadow:0 12px 35px rgba(255,75,0,.28)}
+.btn-main:hover{transform:translateY(-3px);background:#ff5b18}
+.btn-dark{border:1px solid #333;background:#0d0d0d}
+.btn-dark:hover{border-color:#ff4b00}
+.phone{width:290px;height:540px;border:10px solid #202020;border-radius:38px;background:linear-gradient(145deg,#191919,#080808);box-shadow:0 30px 80px #000,0 0 60px rgba(255,75,0,.12);padding:35px 20px;position:relative}
+.phone:before{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);width:90px;height:20px;background:#000;border-radius:20px}
+.app-card{margin-top:35px;padding:20px;border-radius:20px;background:#171717;border:1px solid #292929}
+.app-card h3{font-size:25px}.orange{color:#ff4b00}
+.stat{display:flex;justify-content:space-between;margin-top:18px;color:#999}.stat b{color:#fff}
+section{padding:90px 7%}
+.section-title{text-align:center;font-size:44px;text-transform:uppercase;margin-bottom:15px}
+.section-sub{text-align:center;color:#888;max-width:650px;margin:0 auto 45px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#101010;border:1px solid #252525;border-radius:20px;padding:30px}
+.card .icon{font-size:35px;margin-bottom:18px}.card h3{font-size:23px;margin-bottom:10px}.card p{color:#8f8f8f;line-height:1.6}
+.download{background:linear-gradient(135deg,#190a03,#0b0b0b);border-top:1px solid #25140d;border-bottom:1px solid #25140d;text-align:center}
+.download h2{font-size:50px;text-transform:uppercase}.download p{color:#aaa;margin:18px auto 28px;max-width:650px}
+footer{padding:35px 7%;display:flex;justify-content:space-between;gap:20px;color:#666;border-top:1px solid #171717}
+@media(max-width:800px){
+.navlinks{display:none}.hero{padding-top:125px;flex-direction:column;text-align:center}.hero-left{max-width:800px}.hero p{margin-left:auto;margin-right:auto}.buttons{justify-content:center}.phone{width:250px;height:470px}.grid{grid-template-columns:1fr}.section-title{font-size:35px}.download h2{font-size:38px}footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">FF <span>JOHN</span></div>
+  <div class="navlinks">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+  </div>
+  <a class="navbtn" href="#download">GET APP</a>
+</nav>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-left">
+    <div class="kicker">FREE FIRE TOURNAMENT PLATFORM</div>
+    <h1>PLAY HARD.<br><span>WIN BIG.</span></h1>
+    <p>FF JOHN is your gaming hub for Free Fire tournaments, custom rooms and competitive matches. Download the Android app and start competing.</p>
+    <div class="buttons">
+      <a class="btn btn-main" href="https://github.com/harshnand706/ff-john/raw/refs/heads/main/FF%20JOHN.apk">⬇ Download APK</a>
+      <a class="btn btn-dark" href="#features">View Features</a>
+    </div>
+  </div>
+  <div class="phone">
+    <div class="app-card">
+      <div class="kicker">FF JOHN</div>
+      <h3>TOURNAMENTS</h3>
+      <p style="color:#888;margin-top:8px">Join matches. Compete. Win.</p>
+      <div class="stat"><span>Daily Matches</span><b>LIVE</b></div>
+      <div class="stat"><span>Entry</span><b class="orange">FREE / PAID</b></div>
+      <div class="stat"><span>Platform</span><b>ANDROID</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">Built for Gamers</h2>
+  <p class="section-sub">Everything you need to discover tournaments and compete from your phone.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🏆</div><h3>Daily Tournaments</h3><p>Find upcoming Free Fire matches and compete with other players.</p></div>
+    <div class="card"><div class="icon">🎮</div><h3>Easy Joining</h3><p>Open the app, choose a tournament and follow the joining instructions.</p></div>
+    <div class="card"><div class="icon">💰</div><h3>Prize Matches</h3><p>Participate in eligible prize tournaments and check the rules before joining.</p></div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <h2>Ready to Play?</h2>
+  <p>Download the FF JOHN Android app and start exploring tournaments.</p>
+  <a class="btn btn-main" href="https://github.com/harshnand706/ff-john/raw/refs/heads/main/FF%20JOHN.apk">⬇ DOWNLOAD FF JOHN APK</a>
+</section>
+</main>
+
+<footer>
+  <div>© 2026 FF JOHN</div>
+  <div>Free Fire Tournament App</div>
+</footer>
+</body>
+</html>
